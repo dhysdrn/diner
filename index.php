@@ -9,8 +9,13 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+// This fixed my session start error
+session_save_path('/home/dhiyaana/public_html');
+
 // Require the autoload file
 require_once ('vendor/autoload.php');
+
+
 
 // Test my Order class
 /*

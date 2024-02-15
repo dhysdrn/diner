@@ -6,10 +6,10 @@
 
 class Validate
 {
-// Return true if food is valid
+    // Return true if food is valid
     static function validFood($food)
     {
-        return (trim($food) == "");
+        return trim($food) != "";
     }
 
     static function validMeal($meal)

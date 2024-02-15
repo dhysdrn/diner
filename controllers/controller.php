@@ -7,7 +7,7 @@
 
 class Controller
 {
-    private $_f3; // Fat-free router
+    private $_f3; //Fat-free router
 
     function __construct($f3)
     {
@@ -71,6 +71,7 @@ class Controller
         $view = new Template();
         echo $view->render('views/order-form-1.html');
     }
+
     function order2()
     {
         //echo "Order Form Part II";
@@ -101,6 +102,7 @@ class Controller
         $view = new Template();
         echo $view->render('views/order-form-2.html');
     }
+
     function summary()
     {
         //echo "Thank you for your order!";
