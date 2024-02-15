@@ -1,5 +1,5 @@
 img {
-    /* Temporary fix */
+    /* Temporary fix! */
     width: 50%;
 }
 
@@ -7,6 +7,10 @@ a.btn-primary {
     background-color: darkolivegreen;
 }
 
-.container h1 {
-    color: green;
+h1 {
+    color: darkolivegreen;
+}
+
+.err {
+    color: darkred;
 }
