@@ -2,7 +2,7 @@
 
 /**
  * 328/diner/controllers/controller.php
- * The Controller class for my diner app
+ * The Controller class for my Diner app
  */
 
 class Controller
@@ -112,12 +112,16 @@ class Controller
         echo $view->render('views/order-summary.html');
     }
 
-    function breakfast()
+    function view()
     {
-        //echo "Breakfast";
+        //echo "Thank you for order!";
+
+        // Get the orders from the model
+        $orders = $GLOBALS['dataLayer']->getOrders();
+        $this->_f3->set('orders', $orders);
 
         // Display a view page
         $view = new Template();
-        echo $view->render('views/breakfast-menu.html');
+        echo $view->render('views/view-orders.html');
     }
 }
